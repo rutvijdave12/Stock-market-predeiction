@@ -2,7 +2,7 @@ import requests
 import json
 import pandas as pd
 def stock(ticker):
-    key = 'CBYXEVS6EL5AYF8J'
+    key = 'Your API KEY'
     url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&apikey='+key+'&datatype=csv'
     data = pd.read_csv(url)         #for csv read
     #print(data)                    #printing the csv data
